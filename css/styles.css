@@ -44,6 +44,21 @@ nav a{
   cursor:pointer;
 }
 
+/* Logo Section */
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
 /* HERO */
 .hero{
   height:80vh;
