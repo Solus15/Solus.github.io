@@ -475,3 +475,194 @@ nav b,
   position: relative;
   z-index: 1;
 }
+
+.products-page{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:80px 0;
+
+    background:white;
+}
+
+
+.product-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:100px;
+
+    min-height:85vh;
+
+    padding:60px 0;
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:opacity 1.2s ease,
+               transform 1.2s ease;
+
+}
+
+
+.product-item.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+
+.product-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+
+.product-image img{
+
+    width:100%;
+
+    max-width:650px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    transition:transform 0.8s ease, opacity 0.8s ease;
+
+    filter:drop-shadow(0 20px 35px rgba(0,0,0,0.12));
+
+    opacity:0.95;
+
+}
+
+
+.product-content{
+
+    flex:1;
+
+}
+
+
+.product-content h2{
+
+    font-size:42px;
+
+    color:#0066cc;
+
+    margin-bottom:20px;
+
+}
+
+
+.product-content p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+
+.product-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:14px 28px;
+
+    background:#0066cc;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+}
+
+
+.product-btn:hover{
+
+    background:#004f9f;
+
+}
+
+
+@media(max-width:900px){
+
+.product-item{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:40px;
+
+}
+
+.reverse{
+
+flex-direction:column;
+
+}
+.product-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    background:radial-gradient(circle,
+    rgba(0,123,255,0.12) 0%,
+    rgba(255,255,255,0) 70%);
+
+    border-radius:50%;
+
+    z-index:-1;
+
+}
+
+.product-item:hover .product-image img{
+
+    transform:scale(1.05);
+
+    opacity:1;
+
+}
+
+
+
+}
