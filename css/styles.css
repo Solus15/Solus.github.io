@@ -672,7 +672,178 @@ flex-direction:column;
     opacity:1;
 
 }
+}
 
+.about-company {
+    padding: 80px 20px;
+    background: #f5f7fb;
+}
 
+.about-company-card {
 
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 60px;
+
+    border-radius: 25px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-image: url('CSS Images/Firefly_Gemini Flash_align the text in a straight horizontal manner keep the little 220477(1).png');
+
+    background-size: cover;
+
+    background-position: center;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+}
+
+.about-company-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+
+}
+
+.about-company-card::before {
+
+    content: "";
+
+    display: block;
+
+    width: 100px;
+
+    height: 5px;
+
+    background: #007BFF;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+.about-company-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(255,255,255,0.82);;
+
+    z-index: 1;
+
+}
+
+.about-company-card .section-header,
+.about-company-card .company-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+/* Common Section Heading */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    color: #007BFF;
+    font-size: 2.5rem;
+}
+
+.section-header p {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* About Company */
+
+.about-company {
+    padding: 80px 8%;
+    background: #ffffff;
+}
+
+.company-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.company-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.company-text p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.company-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.company-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Board Members */
+
+.board-members {
+    padding: 80px 8%;
+    background: #f5f7fb;
+}
+
+.members-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.member-card {
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+}
+
+.member-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.member-card h3 {
+    margin-top: 20px;
+}
+
+.member-card p {
+    color: #666;
+    margin-bottom: 20px;
 }
